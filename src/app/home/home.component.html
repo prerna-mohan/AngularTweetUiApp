@@ -1,0 +1,50 @@
+<div class="container px-4 py-4 mx-auto">
+  <div class="card card0">
+    <div class="d-flex flex-lg-row flex-column-reverse">
+      <div class="card card1">
+        <div class="row justify-content-center my-auto">
+          <div class="col-md-8 col-10 my-5">
+            <form #authForm="ngForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <h3>Login</h3><br />
+                <div class="text-danger">
+                  {{invalidMessage}}<br />
+                </div>
+                <label for="emailId">User ID</label>
+                <input type="email"
+                       id="emailId"
+                       class="form-control"
+                       [(ngModel)]="user.emailId"
+                       name="emailId"
+                       required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password"
+                       id="password"
+                       class="form-control"
+                       [(ngModel)]="user.password"
+                       name="password"
+                       required/>
+              </div>
+              <div>
+                <button class="btn btn-color" type="submit" [disabled]="!authForm.valid">Login</button>
+              </div>
+              <br />
+              <div>
+                <small class="font-weight-bold">Don't have an account? <a class="text-danger" (click)="onRegister()">Register</a></small>
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+          <div class="card card2">
+            <div class="my-auto mx-md-5 px-md-5 right">
+              <h3 class="text-white">Tweet App</h3> <small class="text-white"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+

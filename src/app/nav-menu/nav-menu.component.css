@@ -1,0 +1,71 @@
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  align-self: center;
+}
+
+::placeholder {
+  color: #f1f1f1;
+}
+
+.fa{
+  cursor: pointer;
+}
+
+#search-form form {
+  position: relative;
+  width: 280px;
+  font-size: 16px;
+  padding: 8px 15px;
+  padding-right: 37px;
+  background-color: #3b5ca0;
+  border-radius: 20px;
+  margin-left: 15px;
+}
+
+#search-form form input {
+  width: 100%;
+  color: #fff;
+  border: 0;
+  background-color: transparent;
+}
+
+#search-form form button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  color: #f1f1f1;
+  height: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#search-form form button i {
+  font-size: 22px;
+}
+
+.td{
+  display: table-cell;
+  vertical-align: middle;
+}
